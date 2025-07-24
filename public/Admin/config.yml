@@ -1,27 +1,16 @@
 backend:
-  name: github
-  repo: TinderGold22/GlowGuide-Skincare-App
+  name: git-gateway
   branch: main
-  base_url: https://glowguide.vercel.app
 
-media_folder: public/images/blog
-public_folder: /images/blog
-
-site_url: https://glowguide.vercel.app
-display_url: https://glowguide.vercel.app
+media_folder: "public/uploads"
+public_folder: "/uploads"
 
 collections:
-  - name: "blog"
-    label: "Blog Posts"
-    folder: "src/content/blog"
+  - name: "blogs"
+    label: "Blogs"
+    folder: "public/blogs"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Excerpt", name: "excerpt", widget: "text" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["skincare"] }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "SEO Title", name: "seo_title", widget: "string", required: false }
-      - { label: "SEO Description", name: "seo_description", widget: "text", required: false }
