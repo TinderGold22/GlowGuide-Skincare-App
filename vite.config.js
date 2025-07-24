@@ -13,7 +13,9 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-    extensions: ['.js', '.jsx', '.md'], // optional, to support .md import
+    extensions: [".js", ".jsx", ".md"], // optional, to support .md import
+  },
+  optimizeDeps: {
+    include: ["vite-plugin-md"],
   },
 })
-
