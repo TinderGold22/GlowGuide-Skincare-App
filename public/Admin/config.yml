@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: TinderGold22/GlowGuide-Skincare-App
   branch: main
+  base_url: https://glowguide.vercel.app
 
 media_folder: public/images/blog
 public_folder: /images/blog
