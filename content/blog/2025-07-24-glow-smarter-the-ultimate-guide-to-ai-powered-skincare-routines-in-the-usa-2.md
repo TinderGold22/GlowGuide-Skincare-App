@@ -1,6 +1,6 @@
 ---
 title: "Glow Smarter: The Ultimate Guide to AI-Powered Skincare Routines in the USA"
-slug: https://glowrskin.online/blog/ai-skincare-usa-glowguide-routine
+slug: https://glowrskin.online/blog/ai-skincare-usa-glowguide-jkkkll
 date: 2025-07-24T16:08:12.884Z
 author: GlowGuide Team
 category: Skincare Tips
