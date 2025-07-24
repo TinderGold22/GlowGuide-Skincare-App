@@ -1,55 +1,19 @@
 backend:
   name: git-gateway
-  branch: main # আপনার GitHub রিপোজিটরির main branch
+  branch: main
+  repo: TinderGold22/GlowGuide-Skincare-App
 
-media_folder: public/images/uploads
-public_folder: /images/uploads
+media_folder: "public/uploads"
+public_folder: "/uploads"
 
 collections:
   - name: "blog"
-    label: "Blog Posts"
+    label: "Blog"
     folder: "content/blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Author", name: "author", widget: "string", default: "GlowGuide Team"}
-      - {label: "Category", name: "category", widget: "select", options: ["Product Reviews", "Skincare Tips", "Ingredients", "Tutorials"]}
-      - {label: "Featured Image", name: "featured_image", widget: "image"}
-      - {label: "Excerpt", name: "excerpt", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Meta Title", name: "meta_title", widget: "string", required: false}
-      - {label: "Meta Description", name: "meta_description", widget: "text", required: false}
-
-  - name: "products"
-    label: "Products"
-    folder: "content/products"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Product Name", name: "name", widget: "string"}
-      - {label: "Brand", name: "brand", widget: "string"}
-      - {label: "Product Image", name: "image", widget: "image"}
-      - {label: "Price", name: "price", widget: "number", value_type: "float"}
-      - {label: "Benefit", name: "benefit", widget: "text"}
-      - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Affiliate Link", name: "affiliate_link", widget: "string"}
-      - {label: "Category", name: "category", widget: "select", options: ["Cleanser", "Moisturizer", "Serum", "Sunscreen", "Toner"]}
-      - {label: "Skin Types", name: "skin_types", widget: "select", multiple: true, options: ["oily", "dry", "combination", "normal", "sensitive"]}
-      - {label: "Concerns", name: "concerns", widget: "select", multiple: true, options: ["acne", "dark spots", "aging", "dryness", "sensitivity"]}
-      - {label: "Budget Range", name: "budget_range", widget: "select", options: ["budget-friendly", "mid-range", "high-end"]}
-
-  - name: "quiz"
-    label: "Quiz Questions"
-    folder: "content/quiz"
-    create: true
-    slug: "step-{{step}}"
-    fields:
-      - {label: "Step Number", name: "step", widget: "number", value_type: "int"}
-      - {label: "Question", name: "question_text", widget: "text"}
-      - {label: "Options", name: "options", widget: "list", fields: [
-          {label: "Label", name: "label", widget: "string"},
-          {label: "Value", name: "value", widget: "string"}
-        ]}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
