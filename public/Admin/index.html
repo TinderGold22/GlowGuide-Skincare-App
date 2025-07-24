@@ -2,50 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>GlowGuide CMS</title>
-    
-    <script>
-      window.CMS_MANUAL_INIT = true;
-    </script>
-
+    <title>Content Manager</title>
     <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
-
-    <script>
-      CMS.init({
-        config: {
-          backend: {
-            name: "github",
-            repo: "TinderGold22/GlowGuide-Skincare-App",
-            branch: "main",
-            auth_scope: "repo",
-            client_id: "Ov23liu4LnHwbfNr8Z40"
-          },
-          media_folder: "public/images/blog",
-          public_folder: "/images/blog",
-          site_url: "https://glowguide.vercel.app",
-          display_url: "https://glowguide.vercel.app",
-          collections: [
-            {
-              name: "blog",
-              label: "Blog Posts",
-              folder: "src/content/blog",
-              create: true,
-              slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
-              fields: [
-                { label: "Title", name: "title", widget: "string" },
-                { label: "Publish Date", name: "date", widget: "datetime" },
-                { label: "Featured Image", name: "image", widget: "image" },
-                { label: "Excerpt", name: "excerpt", widget: "text" },
-                { label: "Tags", name: "tags", widget: "list", default: ["skincare"] },
-                { label: "Body", name: "body", widget: "markdown" },
-                { label: "SEO Title", name: "seo_title", widget: "string", required: false },
-                { label: "SEO Description", name: "seo_description", widget: "text", required: false }
-              ]
-            }
-          ]
-        }
-      });
-    </script>
   </head>
   <body>
   </body>
